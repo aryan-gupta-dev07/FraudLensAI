@@ -1,0 +1,28 @@
+
+=== TUNED URL MODEL EVALUATION ===
+
+Training rows: 76720
+Testing rows: 19180
+
+Accuracy: 0.889208
+Training time: 5.09 seconds
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.89      9602
+           1       0.92      0.86      0.89      9578
+
+    accuracy                           0.89     19180
+   macro avg       0.89      0.89      0.89     19180
+weighted avg       0.89      0.89      0.89     19180
+
+
+Confusion matrix:
+[[8839  763]
+ [1362 8216]]
+
+True Negatives: 8839
+False Positives: 763
+False Negatives: 1362
+True Positives: 8216

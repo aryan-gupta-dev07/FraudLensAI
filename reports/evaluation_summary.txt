@@ -1,0 +1,57 @@
+FRAUDLENS AI - MODEL EVALUATION SUMMARY
+
+1. PROJECT OVERVIEW
+FraudLens AI analyzes URL structure using a
+machine-learning classification model.
+
+The application extracts 10 structural features
+from a URL and predicts whether it belongs to
+the suspicious or legitimate class.
+
+The application does not visit websites.
+
+2. DATASET
+Total cleaned records: 95,900
+Class 0 records: 48,009
+Class 1 records: 47,891
+
+3. MODEL EVALUATION
+Model: Random Forest
+Training records: 76,720
+Testing records: 19,180
+Test accuracy: 88.50%
+
+Class 0 recall: 91%
+Class 1 recall: 86%
+
+4. APPLICATION TESTING
+Valid URL input: Passed
+Invalid URL containing spaces: Passed
+Empty URL input: Passed
+Model loading: Passed
+Feature extraction and display: Passed
+Streamlit interface: Passed
+
+5. LIMITATIONS
+The reported accuracy is measured on a held-out
+split from the same dataset.
+
+It does not establish real-world phishing
+detection accuracy.
+
+The model can misclassify legitimate URLs.
+For example, example.com received a suspicious
+prediction during testing.
+
+The risk score is a model probability estimate,
+not a verified real-world phishing probability.
+
+URL structure alone cannot establish whether
+a website is malicious.
+
+6. FUTURE IMPROVEMENTS
+Evaluate on an independent dataset.
+Investigate unexpected predictions.
+Improve generalization to unseen URLs.
+Add more robust evaluation and testing.
+Document model limitations clearly.

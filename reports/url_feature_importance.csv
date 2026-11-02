@@ -1,0 +1,11 @@
+Feature,Importance
+url_length,0.2708583041353992
+special_character_count,0.16238002123494982
+path_length,0.15529548032337828
+subdomain_count,0.1485177834333575
+hostname_length,0.12520303699426555
+digit_count,0.12370114511681127
+contains_dash_in_hostname,0.013404061361446472
+contains_at_symbol,0.0006401674003919705
+uses_ip_address,0.0
+https_scheme,0.0

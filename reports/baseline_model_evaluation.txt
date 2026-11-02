@@ -1,0 +1,26 @@
+
+=== BASELINE URL MODEL EVALUATION ===
+
+Testing rows: 19180
+Accuracy: 0.885036
+Evaluation time: 0.12 seconds
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.91      0.89      9602
+           1       0.91      0.86      0.88      9578
+
+    accuracy                           0.89     19180
+   macro avg       0.89      0.89      0.88     19180
+weighted avg       0.89      0.89      0.88     19180
+
+
+Confusion matrix:
+[[8746  856]
+ [1349 8229]]
+
+True Negatives: 8746
+False Positives: 856
+False Negatives: 1349
+True Positives: 8229

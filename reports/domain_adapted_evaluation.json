@@ -1,0 +1,52 @@
+{
+    "dataset": "Mendeley external URL dataset",
+    "split_method": "Domain-separated GroupShuffleSplit",
+    "train_rows": 80092,
+    "validation_rows": 17259,
+    "test_rows": 19249,
+    "threshold": 0.6000000000000002,
+    "accuracy": 0.9755311964257883,
+    "precision": 0.9340463458110517,
+    "recall": 0.9599267231509045,
+    "f1": 0.9468097120271033,
+    "roc_auc": 0.9917293194210146,
+    "pr_auc": 0.9713730170312158,
+    "confusion_matrix": [
+        [
+            14586,
+            296
+        ],
+        [
+            175,
+            4192
+        ]
+    ],
+    "classification_report": {
+        "0": {
+            "precision": 0.9881444346588985,
+            "recall": 0.980110200241903,
+            "f1-score": 0.9841109199473738,
+            "support": 14882.0
+        },
+        "1": {
+            "precision": 0.9340463458110517,
+            "recall": 0.9599267231509045,
+            "f1-score": 0.9468097120271033,
+            "support": 4367.0
+        },
+        "accuracy": 0.9755311964257883,
+        "macro avg": {
+            "precision": 0.961095390234975,
+            "recall": 0.9700184616964038,
+            "f1-score": 0.9654603159872386,
+            "support": 19249.0
+        },
+        "weighted avg": {
+            "precision": 0.9758712592212888,
+            "recall": 0.9755311964257883,
+            "f1-score": 0.9756484348838472,
+            "support": 19249.0
+        }
+    },
+    "domain_overlap": false
+}
