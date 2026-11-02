@@ -99,4 +99,3 @@ Disclaimer
 FraudLens AI is an educational and research-oriented machine learning project intended for phishing URL analysis and experimentation.
 
 It is not a replacement for professional cybersecurity solutions or browser security protections.
-
