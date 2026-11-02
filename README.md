@@ -4,16 +4,17 @@ Machine Learning-Based Phishing URL Detection System
 
 FraudLens AI is a machine learning project designed to identify potentially suspicious and phishing URLs using URL-based structural features.
 
-The project focuses on detecting suspicious URL patterns without directly visiting or opening the submitted websites.
+The system analyzes URL characteristics to classify potentially malicious links without directly visiting or opening the submitted websites.
 
 Features
 
 - Machine learning-based phishing URL classification.
 - URL structural feature extraction.
 - Suspicious URL analysis.
-- Prediction through an interactive Streamlit interface.
+- Interactive Streamlit application.
 - Model evaluation and performance reports.
-- Testing and error analysis.
+- Error analysis and testing.
+- External dataset evaluation.
 
 Technology Stack
 
@@ -26,7 +27,7 @@ Technology Stack
 
 Model Evaluation
 
-The following results were obtained during the unseen CompPhish dataset evaluation at a classification threshold of 0.40.
+The following results were obtained during evaluation on the unseen CompPhish dataset using a classification threshold of 0.40.
 
 Metric| Result
 Accuracy| 85.51%
@@ -34,7 +35,7 @@ Precision| 83.43%
 Recall| 84.47%
 F1-score| 83.94%
 
-These results represent a specific dataset evaluation and should not be interpreted as guaranteed real-world performance.
+These results represent a specific dataset evaluation. They should not be interpreted as guaranteed real-world performance.
 
 Project Structure
 
@@ -44,45 +45,58 @@ FraudLensAI/
 ├── src/
 ├── tests/
 ├── reports/
+├── models/       # Local trained models (not included)
+├── data/         # Local datasets (not included)
 └── .gitignore
 
 Installation
 
-Clone the repository:
+1. Clone the repository
 
 git clone https://github.com/aryan-gupta-dev07/FraudLensAI.git
 cd FraudLensAI
 
-Create a virtual environment:
+2. Create a virtual environment
 
 python -m venv .venv
 
-Activate it on Windows:
+3. Activate the environment
+
+Windows:
 
 .venv\Scripts\activate
 
-Install dependencies:
+Linux/macOS:
+
+source .venv/bin/activate
+
+4. Install dependencies
 
 pip install -r requirements.txt
 
-Model Files and Datasets
+Running the Application
 
-Large trained model files and datasets are excluded from this repository to keep the GitHub repository lightweight.
+After installing the required dependencies and placing the trained model files in the expected local directory, run:
 
-The application requires the corresponding trained model files to be available in the expected local model directory. Refer to the project source code for the required filenames and paths.
+streamlit run app.py
+
+Models and Datasets
+
+Large trained model files and datasets are excluded from this GitHub repository to keep it lightweight.
+
+The application requires the corresponding trained model files to be available locally. Refer to the source code for the expected model filenames and paths.
 
 Limitations
 
-- Predictions are based primarily on URL structural characteristics.
-- The system does not inspect the actual webpage content.
+- Predictions are primarily based on URL structural characteristics.
+- The system does not inspect actual webpage content.
 - Performance can vary across datasets and changing phishing techniques.
 - Prediction scores are not verified real-world probabilities.
-- The system should not be treated as a standalone security guarantee.
+- The system is not a standalone security guarantee.
 
 Disclaimer
 
-FraudLens AI is an educational and research-oriented project. It is intended for machine learning experimentation and phishing URL analysis, not as a replacement for professional cybersecurity solutions.
+FraudLens AI is an educational and research-oriented machine learning project intended for phishing URL analysis and experimentation.
 
-Author
+It is not a replacement for professional cybersecurity solutions or browser security protections.
 
-Developed as an AI/ML portfolio project.
